@@ -59,7 +59,7 @@ void UpdateParticles()
  
 void setup()
 {
-    size(400, 400);
+    size(400, 400, OPENGL);
     frameRate(30);
     InitParticle();
 }
@@ -72,5 +72,5 @@ void draw()
     {
         p[i].DrawParticle();
     }
-    saveFrame("frames/####.png");
+    //saveFrame("frames/####.png");
 }
